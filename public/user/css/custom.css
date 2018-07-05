@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Theme Name: MahalaDev
+    Version: 1.0
+    Created on : Mar 29, 2018, 3:46:02 PM
+    Author     : esethu
+*/
+
+@font-face {
+  font-family: 'FuturaDemiOblique';
+  src: url('fonts/FuturaDemiOblique.eot?') format('eot'), url('fonts/FuturaDemiOblique.woff') format('woff'), url('fonts/FuturaDemiOblique.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'FuturaCondensedBold';
+	src: url('fonts/FuturaCondensedBold.eot');
+    src: url('fonts/FuturaCondensedBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FuturaCondensedBold.woff') format('woff'),
+         url('fonts/FuturaCondensedBold.ttf') format('truetype'),
+         url('fonts/FuturaCondensedBold.svg#FuturaCondensedBold') format('svg');
+}
+
+@font-face {
+ font-family: SourceSansRegular;
+ src: url('fonts/SourceSansRegular.eot');
+ src: url('fonts/SourceSansRegular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/SourceSansRegular.woff') format('woff'),
+      url('fonts/SourceSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'FuturaDemi';
+ src: url('fonts/FuturaDemi.eot');
+ src: url('fonts/FuturaDemi.eot?#iefix') format('embedded-opentype'),
+      url('fonts/FuturaDemi.woff') format('woff'),
+      url('fonts/FuturaDemi.ttf') format('truetype'),
+      url('fonts/FuturaDemi.svg#FuturaDemi') format('svg');
+}
+
+@font-face {
+  font-family: 'SourceSansBold';
+  src: url('fonts/SourceSansBold.eot?') format('eot'), url('fonts/SourceSansBold.woff') format('woff'), url('fonts/SourceSansBold.ttf') format('truetype');
+}
+
+body 
+{
+	font-family: SourceSansRegular, Arial, Sans-Serif;
+	background: #221E1F;
+	color: #333333;
+	margin: 10px;
+	padding: 0;
+	margin-top:0px !important;
+}
+
+body strong
+{
+	font-family: SourceSansBold;
+}
+
+/* swipe classes */
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+.post-header{
+    margin-bottom: 20px;
+}
+
+#main-container{
+    margin-top: 50px;
+    background-color: #fff !important;
+}
+
+.header_ad_728x90{
+    width: 728px;
+    height: 90px;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px;
+}
+.img_ad300x250{
+    width: 300px;
+    height: 250px;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.img_ad278x76{
+    margin-top: 40px;
+    width: 278px;
+    height: 76px;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.img_ad300x600{
+    margin-top: 40px;
+    width: 300px;
+    height: 600px;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#owl-demo{
+     margin-bottom: 50px;
+}
+#owl-demo .item{
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.owl-nav {
+    position: absolute;
+    top: 43%;
+    width: 100%;
+    height: 52px;
+}
+
+@media screen and (max-width: 768px) {
+    .header_ad_728x90{
+        display: none;
+    }
+    .owl-nav {
+        display: none;
+    }
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    position: absolute;
+}
+
+
+.owl-nav .owl-prev {
+    left: 0px;
+}
+.owl-nav .owl-next:last-child {
+    right: 0px;
+}
+
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    background: none !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #d84f04 !important;
+
+}
+
+
+.panel-custom>.panel-heading {
+    color: #fff;
+    background-color: #221E1F;
+    border-color: #221E1F;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: FuturaDemi, Arial;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.panel-heading-custom {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-bottom: 50px;
+}
+
+.comment-section{
+    list-style: none;
+    margin-top: 20px;
+}
+.comment-section li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.comment-section li:first-child{
+     margin-left: 0px;
+}
+.story-margins{
+    margin: 40px 0;
+}
+
+.para-news{
+    margin: 20px 0;
+}
+
+.news-article-container{
+  margin-bottom: 40px;  
+}
+
+.slider-caption{
+    z-index: 99999;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#post-text-container{
+    margin-top: 40px;
+}
+
+.created_at{
+    margin-bottom: 20px;
+}
+
+
+@media(max-width:480px){
+    body {
+        background: #fff;
+    }
+}
