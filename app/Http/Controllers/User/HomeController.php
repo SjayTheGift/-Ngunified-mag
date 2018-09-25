@@ -11,7 +11,8 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     public function index(){
-        $posts = post::where('status',1)->paginate(5);
+        $posts = post::where('status',1)->latest()->paginate(5);  
+        //$posts = post::latest('status',1)->paginate(5);
         return view('user.home', compact('posts'));
     }
     

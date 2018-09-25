@@ -5,20 +5,6 @@
 @endsection
 
 @section('main-content')
-<ul class="owl-carousel slide" id="owl-demo">
-    <li class="slide__item">
-        <img src="{{ asset('user/img/index_slider/pic01.jpg')}}" />
-        <h2 class="slider-caption">Article 1</h2>
-    </li>
-
-    <li class="slide__item">
-        <img src="{{ asset('user/img/index_slider/pic02.jpg')}}" />
-    </li>
-
-    <li class="slide__item">
-        <img src="{{ asset('user/img/index_slider/pic03.jpg')}}" />
-    </li>
-</ul>
 
 <div class="row" id="app">
     <div class="col-xs-12 col-sm-12 col-md-8">
@@ -30,25 +16,14 @@
 
                 <div class="row story-margins">
                     <div class="col-xs-12 col-sm-12 col-md-6">
-                        <img src="{{Storage::disk('local')->url($post->image) }}" class="img-responsive">
+                        <img src="{{Storage::disk('local')->url($post->image)}}" class="img-responsive">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <a href="{{ route('post',$post->slug)}}"
                         <h3 class="post-header">{{$post->title}}</h3>
                         </a>
-                        <p> {!! htmlspecialchars_decode($post->body) !!}</p>
-                        <ul class="comment-section">
-                            <li><a href="#">
-                                    <img src="{{ asset('user/img/icons/comment_icon.gif')}}" />
-                                </a>
-                            </li>
-                            <li><a href="#">
-                                    <small>0</small>
-                                    <img src="{{ asset('user/img/icons/kif.png')}}" />
-                                </a>
-                            </li>
-                            <li><a href="#">Share</a></li>
-                        </ul>
+                        <p> {{str_limit (strip_tags($post->body),500) }}</p>
+                        
                     </div>
 
                 </div>
@@ -93,9 +68,7 @@
 
                     </div>
 
-                    <div class="img_ad300x600">
-
-                    </div>
+                    
                 </div>
             </div>
         </div>

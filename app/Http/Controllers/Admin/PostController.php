@@ -28,7 +28,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = post::all();
+        $posts = post::orderBy('created_at','desc')->get();
         return view('admin.post.show',compact('posts'));   
     }
 
@@ -78,7 +78,6 @@ class PostController extends Controller
         $post->save();
         $post->tags()->sync($request->tags);
         $post->categories()->sync($request->categories);
-
         return redirect(route('post.index'));
     }
 
